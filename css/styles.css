@@ -1238,7 +1238,7 @@ textarea {
     resize: none;
 }
 /* кнопка отправить в модалке */
-.btn-on {
+.submit {
     position: absolute;
     top: 491px;
     right: 160px;
