@@ -1,3 +1,16 @@
+@import "./utils/fonts";
 @import "./utils/variables";
+@import "./base/reset-styles";
 @import "./base/normalize";
 @import "./components/page-header";
+@import "./components/page-footer";
+@import "./components/page-main";
+@import "./components/page-modal";
+@import "./components/page-subscription";
+@import "./components/page-portfolio";
+@import "./components/portfolio-button";
+@import "./components/our-works";
+@import "./components/our-team";
+@import "./components/our-clients";
+@import "./components/page-main-works";
+@import "./components/noname";
