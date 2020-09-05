@@ -1,0 +1,52 @@
+/* портфолио кнопки */
+.box-button {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 611px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+}
+/* портфолио кнопки */
+.list-buttons li:not(:last-child) {
+    margin-right: 8px;
+}
+/* сброс цвета портфолио кнопки*/
+.butt a {
+    color: $dark-color;
+    display: block;
+    padding: 6px;    
+    margin: 0;
+}
+/* портфолио кнопки */
+.butt {
+    display: flex;
+    justify-content: center ;
+    height: 100%;
+    height: 38px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $dark-color;
+    background: $white-button;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-bottom: 50px;
+}
+/* портфолио кнопки */
+.butt a:hover {
+    background: $accent-color;
+    color: $white-color;
+    box-sizing: inherit;
+    border-radius: 4px;    
+}
+/* главная шапка навигация */
+.nav-links .menu {
+    margin-right: 50px;
+}

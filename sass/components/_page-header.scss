@@ -1,0 +1,180 @@
+/* header */
+.nav-links .link:hover,
+.nav-links .link:focus {
+    color: $accent-color;   
+}
+
+/* header */
+.container-block {
+    display: flex; 
+    width: 1200px;
+}
+/* выровнял текст
+header*/
+.container-nav {
+    display: flex;
+    justify-content: flex-start ;
+    align-self: flex-end;
+}
+/* header */
+.logotype {
+    display: flex;
+    width: 153px;
+    padding-left: 0px;
+    margin-right: 85px;
+    text-decoration: none;
+    font-weight: 700;
+    align-self: center;
+}
+/* header */
+.logo {
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;   
+    letter-spacing: 0.03em;   
+    color: $accent-color;      
+}
+/* header */
+.log {
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-right: 85px;
+    margin-left: 5px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;   
+    letter-spacing: 0.03em;   
+    color: $dark-color;   
+}
+
+/* header */
+.nav-links {
+    display: flex;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;    
+    color: $dark-color; 
+    align-self: center;      
+}
+/* header */
+.nav-links .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+}
+/* header, для всех эл. кроме посл. отступ 50*/
+.nav-links .menu:last-child {
+    margin-right: 0;
+}
+/* header */
+ .adr {
+    display: flex;
+    justify-content: start;
+    margin-left: 305px;
+    margin-right: 0;
+    align-items: center;
+}
+/* header */
+.pin {
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+    padding-top: 32px;
+    padding-right: 0;
+    padding-bottom: 32px;
+    margin-right: 60px;
+    color: $dark-color;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+/* header */
+.pin::before {
+    content: "";
+    height: 11px;
+    background-image: url("./images/symbol-defs.svg#icon-envelope");
+    background-size: contain;
+}
+/* header */
+.key {
+    display: flex;
+    align-items: center;
+    color: $dark-color;
+    text-decoration: none;
+    cursor: pointer;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 0;
+    margin-right: 0;   
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+/* header */
+.key::before {
+    content: "";
+    height: 15px;
+    background-image: url("./images/symbol-defs.svg#icon-smartphone");
+    background-size: contain;
+}
+/* header */
+.pin:hover,
+.pin:focus {
+   fill: $accent-color;
+   color: $accent-color;
+}
+/* header */
+.key:hover,
+.key:focus {
+    fill: $accent-color;
+    color: $accent-color;
+}
+/* header */
+.adr-icon {
+    margin-right: 10px;
+
+}
+/* header */
+.tel-icon {
+    margin-right: 10px;
+}
+/* header */
+.let {
+    margin-right: 10px;
+}
+/* header */
+.smart {
+    margin-right: 10px;
+}
+/* header */
+.adr .adr-mail,
+.adr .adr-tel {
+    display: flex;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;   
+    color: $main-color;        
+}

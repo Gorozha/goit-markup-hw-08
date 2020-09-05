@@ -1,0 +1,206 @@
+/*стилизация модалки*/
+.modal {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    max-width: 528px;
+    max-height: 581px;
+    background-color: $white-color;
+}
+/
+/*слой месседж*/
+.message {
+    margin-top: 40px;
+    margin-right: auto;
+    margin-bottom: 12px;
+    margin-left: auto;
+    width: 448px;
+    left: 0;
+    top: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $dark-color;
+}
+/*позиционируем крестик(кнопку закрытия)*/
+.btn-close {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px;
+    border-color: $main-color;
+    fill: $white-color;
+}
+.btn-close:hover,
+.btn-close:focus {
+
+    fill: url(./images/symbol-defs5.svg#icon-closeblue);
+}
+.btn-close:hover {
+    fill: var(--accent-color);
+    background-color: brown;
+    color: tomato;
+}
+
+
+
+/*стилизация модалки*/
+.form-field  {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 448px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.form-field label {
+    margin-bottom: 5px;
+}
+/*стилизация модалки*/
+.form-field input::placeholder {
+    color: $main-color;
+    text-align: right;
+}
+.form-label {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    border-color: $main-color;
+    transition: transform 250ms $timing-function;
+}
+.form-label:hover,
+.form-label:focus {
+    border-color: $accent-color;
+}
+
+.form-input {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    border-radius: 3px;
+    padding-left: 40px;
+    border: 1px solid $main-color;
+    outline: none;
+}
+
+/*поле ввода комментария в модалке*/
+.comment {
+    position: absolute;
+    width: 448px;
+    height: 138px;
+    padding: 10px 20px;
+    top: 255px;
+    margin-bottom:20px;
+    right: 40px;
+    border-radius: 4px;
+    border: 1px solid $main-color;
+    outline: none;
+}
+/* фокус комментария модалки*/
+textarea:focus {
+    border: 1px solid $accent-color;
+}
+/* фокус инпутов модалки*/
+.form-input:focus {
+    border: 1px solid $accent-color;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: transform 250ms $timing-function;
+
+}
+/*ссылка условия договора в модалке*/
+.painting {
+    color: $accent-color;
+}
+/* чекбокс в модалке */
+.check {
+    position: absolute;
+    top: 437px;
+    right: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+/* блок комментариев в модалке */
+textarea {
+    resize: none;
+}
+/* кнопка отправить в модалке */
+.submit {
+    position: absolute;
+    top: 491px;
+    right: 160px;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 40px;
+    color: $white-color;
+    background-color: $accent-color;
+    transition: transform 250ms $timing-function;
+    border-radius: 4px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+/*поле ввода комментария в модалке*/
+.form-field-comment {
+    position: absolute;
+    top: 13px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*поле ввода комментария в модалке*/
+.form-label-comment {
+    position: absolute;
+    top: 232px;
+    right: 395px;
+    color: $dark-color;
+}
+
+.form-input:focus + .form-label,
+ .form-input:not(:placeholder-shown) + .form-label {
+    transform: translate(-40px, -40px);
+    transition: transform 250ms $timing-function;
+}
+
+.icon-small {
+    position: absolute;
+    top: 40%;
+    left: 11px;
+    transform: translateY(-30%);
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+}
+/*стилизация модалки*/
+.form-input:focus ~ .icon-small {
+    fill: $accent-color;/*меняет цвет иконок в модалке*/
+    outline-color: $accent-color;
+}

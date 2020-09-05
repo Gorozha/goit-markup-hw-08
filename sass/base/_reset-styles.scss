@@ -1,0 +1,52 @@
+html {
+    box-sizing: border-box;
+} 
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+body {
+
+    color: $dark-color;
+    background-color: $white-color;
+    max-width: 1600px;
+    margin: auto;
+    border: solid $main-color 1px;
+}
+a {
+    text-decoration: none;
+}
+
+h2,h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $dark-color;
+    margin: 0;
+}
+
+p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $main-color;
+    margin: 0;
+}
+
+/*для сброса точек перед списками*/
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
