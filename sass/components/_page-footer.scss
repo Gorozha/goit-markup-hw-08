@@ -1,4 +1,4 @@
-/* футер */
+
 .dark-background {
     position: relative;
     background: $dark-background;
@@ -6,7 +6,7 @@
     height: 252px;
     margin: auto;
 }
-/*футер*/
+
 .follow {
     font-family: Roboto;
     font-style: normal;
@@ -18,13 +18,13 @@
     color: $dark-color;
 }
 
-/* футер */
+
 .footer-content {
  
     display: flex;
     width: 1600px;
 }
-/* футер */
+
 .footer-logotype {
     display: flex;
     font-family: Raleway;
@@ -36,7 +36,7 @@
     margin-bottom: 20px;
     letter-spacing: 0.03em;
 }
-/* футер */
+
 .footer-logo {
     display: flex;
     font-family: Raleway;
@@ -47,7 +47,7 @@
     letter-spacing: 0.03em;   
     color: $accent-color;
 }
-/* футер */
+
 .footer-log {
     display: flex;
     margin-left: 5px;
@@ -59,19 +59,19 @@
     letter-spacing: 0.03em;   
     color: $white-color; 
 }
-/* футер */
+
 .footer-adr {
     display: flex;
     flex-direction: column;
     width: 270px;
     margin-right: 30px;
 }
-/*футер*/
+
 .footer-adr-mail,
 .footer-adr-tel {
     color: $main-color;
 }
-/* футер */
+
 .adr-city{
     display: flex;
     flex-direction: column;
@@ -80,38 +80,36 @@
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    /*line-height: 24px;*/
     letter-spacing: 0.03em;
     margin-bottom: 60px;
+    & p {
+        color: $white-color;
+    }
 }
-/* футер */
-.adr-city p {
-    color: $white-color;
-}
-/* футер */
+
 .footer-social {
     margin-top: 72px;
     margin-bottom: 100px;      
     width: 270px; 
 }
-/* футер */
+
 .follow {
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
     color: $white-color;
 }
-/* футер */
+
 .social-links {
     display: flex;
     flex-direction: row;
     color: $white-color;
 }
-/* футер */ /* задаем отступы иконок*/
+
 .footer-icon:not(:last-child) {
     margin-right: 10px;
 }
-/* футер */
+
 .footer-links {
     display: flex;
     justify-content: center;
@@ -120,12 +118,11 @@
     height: 44px;
     background: $main-color;
     border-radius: 50%;
-}
-/*футер*/
-.footer-links:hover,
-.footer-links:focus {
-    fill: $white-color;
-    background-color: $accent-color; 
+    &:hover,
+    &:focus {
+        fill: $white-color;
+        background-color: $accent-color;
+    } 
 }
 /*футер*/
 .footer-link {

@@ -434,9 +434,13 @@ p {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* header */
-.nav-links .link:hover,
-.nav-links .link:focus {
+/* главная шапка навигация */
+.nav-links .menu {
+  margin-right: 50px;
+}
+
+.nav-links .menu .link:hover,
+.nav-links .menu .link:focus {
   color: #2196F3;
 }
 
@@ -509,7 +513,6 @@ header*/
   color: #212121;
 }
 
-/* header */
 .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -525,24 +528,20 @@ header*/
       align-self: center;
 }
 
-/* header */
 .nav-links .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-/* главная шапка навигация */
 .nav-links .menu {
   margin-right: 50px;
 }
 
-/* header, для всех эл. кроме посл. отступ 50*/
 .nav-links .menu:last-child {
   margin-right: 0;
 }
 
-/* header */
 .adr {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -557,7 +556,6 @@ header*/
           align-items: center;
 }
 
-/* header */
 .pin {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -583,7 +581,6 @@ header*/
   letter-spacing: 0.02em;
 }
 
-/* header */
 .pin::before {
   content: "";
   height: 11px;
@@ -591,7 +588,6 @@ header*/
   background-size: contain;
 }
 
-/* header */
 .key {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -614,7 +610,6 @@ header*/
   letter-spacing: 0.02em;
 }
 
-/* header */
 .key::before {
   content: "";
   height: 15px;
@@ -671,7 +666,15 @@ header*/
   color: #757575;
 }
 
-/* футер */
+.line {
+  width: 100%;
+  color: #757575;
+  height: 0,5px;
+  margin-bottom: 93px;
+  background-color: #757575;
+  margin-top: 0;
+}
+
 .dark-background {
   position: relative;
   background: #2F303A;
@@ -680,7 +683,6 @@ header*/
   margin: auto;
 }
 
-/*футер*/
 .follow {
   font-family: Roboto;
   font-style: normal;
@@ -692,7 +694,6 @@ header*/
   color: #212121;
 }
 
-/* футер */
 .footer-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -700,7 +701,6 @@ header*/
   width: 1600px;
 }
 
-/* футер */
 .footer-logotype {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -715,7 +715,6 @@ header*/
   letter-spacing: 0.03em;
 }
 
-/* футер */
 .footer-logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -729,7 +728,6 @@ header*/
   color: #2196F3;
 }
 
-/* футер */
 .footer-log {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -744,7 +742,6 @@ header*/
   color: #ffffff;
 }
 
-/* футер */
 .footer-adr {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -757,13 +754,11 @@ header*/
   margin-right: 30px;
 }
 
-/*футер*/
 .footer-adr-mail,
 .footer-adr-tel {
   color: #757575;
 }
 
-/* футер */
 .adr-city {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -777,24 +772,20 @@ header*/
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  /*line-height: 24px;*/
   letter-spacing: 0.03em;
   margin-bottom: 60px;
 }
 
-/* футер */
 .adr-city p {
   color: #ffffff;
 }
 
-/* футер */
 .footer-social {
   margin-top: 72px;
   margin-bottom: 100px;
   width: 270px;
 }
 
-/* футер */
 .follow {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -807,7 +798,6 @@ header*/
   color: #ffffff;
 }
 
-/* футер */
 .social-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -819,13 +809,10 @@ header*/
   color: #ffffff;
 }
 
-/* футер */
-/* задаем отступы иконок*/
 .footer-icon:not(:last-child) {
   margin-right: 10px;
 }
 
-/* футер */
 .footer-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -842,9 +829,7 @@ header*/
   border-radius: 50%;
 }
 
-/*футер*/
-.footer-links:hover,
-.footer-links:focus {
+.footer-links:hover, .footer-links:focus {
   fill: #ffffff;
   background-color: #2196F3;
 }
@@ -1848,19 +1833,5 @@ textarea {
 .section2 {
   display: inline-block;
   width: 1200px;
-}
-
-.line {
-  width: 100%;
-  color: #757575;
-  height: 0,5px;
-  margin-bottom: 93px;
-  background-color: #757575;
-  margin-top: 0;
-}
-
-/* главная шапка навигация */
-.nav-links .menu {
-  margin-right: 50px;
 }
 /*# sourceMappingURL=main.css.map */
