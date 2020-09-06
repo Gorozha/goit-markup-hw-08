@@ -40,9 +40,8 @@
     transform: translateY(-50%);
     border-color: $main-color;
     transition: transform 250ms $timing-function;
-
-    & :hover,
-    & :focus {
+    &:hover,
+    &:focus {
         border-color: $accent-color;
     }    
 }
@@ -57,12 +56,12 @@
     padding-left: 40px;
     border: 1px solid $main-color;
     outline: none;
-}
-.form-input:focus {
-    border: 1px solid $accent-color;
-    box-sizing: border-box;
-    border-radius: 4px;
-    transition: transform 250ms $timing-function;    
+    &:focus {
+        border: 1px solid $accent-color;
+        box-sizing: border-box;
+        border-radius: 4px;
+        transition: transform 250ms $timing-function;
+    }    
 }
 
 .comment {
@@ -202,10 +201,10 @@ textarea {
     border-color: $main-color;
     fill: $white-color;
 
-    & :hover,
-    & :focus {
-        fill: $accent-color;
+    &:hover,
+    &:focus {        
         fill: url('./images/symbol-defs5.svg#icon-closeblue');
+        fill: $accent-color;
     }   
 }
 

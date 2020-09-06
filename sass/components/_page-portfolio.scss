@@ -4,7 +4,7 @@
     width: 1170px;
     background-color: $white-color;
 }
-/* портфолио проэкты */
+
 .chapter {
     font-family: Roboto;
     font-style: normal;
@@ -16,7 +16,7 @@
     color: $dark-color;
 }
 
-/* портфолио проэкты */
+
 .list-of-projects {
     display: flex;
     flex-wrap: wrap;
@@ -25,7 +25,7 @@
     margin-right: auto;
     margin-bottom: 94px;
 }
-/* портфолио проэкты */
+
 .elements-projects {
     position: relative;
     width: 370px;
@@ -34,7 +34,7 @@
     margin-bottom: 30px;
     outline: 1px solid $white-color;
 }
-/*портфолио оверлей*/
+
 .overlay {
     width: 370px;
     height: 294px;
@@ -42,7 +42,7 @@
     overflow: hidden;
     opacity: 1;
 }
-/*портфолио оверлей*/
+
   .note  {
     position: absolute;
     margin: 0;   

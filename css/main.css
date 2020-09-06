@@ -984,8 +984,7 @@ header*/
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-label :hover,
-.form-label :focus {
+.form-label:hover, .form-label:focus {
   border-color: #2196F3;
 }
 
@@ -1164,10 +1163,9 @@ textarea {
   fill: #ffffff;
 }
 
-.btn-close :hover,
-.btn-close :focus {
-  fill: #2196F3;
+.btn-close:hover, .btn-close:focus {
   fill: url("./images/symbol-defs5.svg#icon-closeblue");
+  fill: #2196F3;
 }
 
 /*ссылка условия договора в модалке*/
@@ -1302,7 +1300,6 @@ textarea {
   background-color: #ffffff;
 }
 
-/* портфолио проэкты */
 .chapter {
   font-family: Roboto;
   font-style: normal;
@@ -1314,7 +1311,6 @@ textarea {
   color: #212121;
 }
 
-/* портфолио проэкты */
 .list-of-projects {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1327,7 +1323,6 @@ textarea {
   margin-bottom: 94px;
 }
 
-/* портфолио проэкты */
 .elements-projects {
   position: relative;
   width: 370px;
@@ -1337,7 +1332,6 @@ textarea {
   outline: 1px solid #ffffff;
 }
 
-/*портфолио оверлей*/
 .overlay {
   width: 370px;
   height: 294px;
@@ -1346,7 +1340,6 @@ textarea {
   opacity: 1;
 }
 
-/*портфолио оверлей*/
 .note {
   position: absolute;
   margin: 0;
