@@ -1,17 +1,3 @@
-.backdrop {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: $light-shadow-3;
-    opacity: 1;
-}
-.backdrop.is-hidden {
-    visibility: hidden;
-    pointer-events: none;
-    opacity: 0;
-}
 /*стилизация модалки*/
 .modal {
     position: absolute;
@@ -26,48 +12,6 @@
     background-color: $white-color;
 }
 
-/*слой месседж*/
-.message {
-    margin-top: 40px;
-    margin-right: auto;
-    margin-bottom: 12px;
-    margin-left: auto;
-    width: 448px;
-    left: 0;
-    top: 0;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $dark-color;
-}
-/*позиционируем крестик(кнопку закрытия)*/
-.btn-close {
-    position: absolute;
-    top: -8px;
-    right: -8px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1px;
-    border-color: $main-color;
-    fill: $white-color;
-}
-.btn-close:hover,
-.btn-close:focus {
-
-    fill: url(./images/symbol-defs5.svg#icon-closeblue);
-}
-/*.btn-close:hover {
-    fill: var(--accent-color);
-    background-color: brown;
-    color: tomato;
-}*/
-
-/*стилизация модалки*/
 .form-field  {
     position: relative;
     display: flex;
@@ -78,16 +22,17 @@
     border-radius: 4px;
     margin-right: auto;
     margin-left: auto;   
+
+        & label {
+            margin-bottom: 5px;
+        }
 }
 
-.form-field label {
-    margin-bottom: 5px;
-}
-/*стилизация модалки*/
 .form-field input::placeholder {
     color: $main-color;
     text-align: right;
 }
+
 .form-label {
     position: absolute;
     top: 50%;
@@ -95,10 +40,11 @@
     transform: translateY(-50%);
     border-color: $main-color;
     transition: transform 250ms $timing-function;
-}
-.form-label:hover,
-.form-label:focus {
-    border-color: $accent-color;
+
+    & :hover,
+    & :focus {
+        border-color: $accent-color;
+    }    
 }
 
 .form-input {
@@ -112,8 +58,13 @@
     border: 1px solid $main-color;
     outline: none;
 }
+.form-input:focus {
+    border: 1px solid $accent-color;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: transform 250ms $timing-function;    
+}
 
-/*поле ввода комментария в модалке*/
 .comment {
     position: absolute;
     width: 448px;
@@ -126,23 +77,14 @@
     border: 1px solid $main-color;
     outline: none;
 }
-/* фокус комментария модалки*/
 textarea:focus {
     border: 1px solid $accent-color;
 }
-/* фокус инпутов модалки*/
-.form-input:focus {
-    border: 1px solid $accent-color;
-    box-sizing: border-box;
-    border-radius: 4px;
-    transition: transform 250ms $timing-function;
 
-}
-/*ссылка условия договора в модалке*/
 .painting {
     color: $accent-color;
 }
-/* чекбокс в модалке */
+
 .check {
     position: absolute;
     top: 437px;
@@ -151,12 +93,12 @@ textarea:focus {
     margin-left: auto;
     margin-bottom: 30px;
 }
-/* блок комментариев в модалке */
+
 textarea {
     resize: none;
 }
-/* кнопка отправить в модалке */
-.submit {
+
+.btn-on {
     position: absolute;
     top: 491px;
     right: 160px;
@@ -193,7 +135,6 @@ textarea {
     right: 395px;
     color: $dark-color;
 }
-
 .form-input:focus + .form-label,
  .form-input:not(:placeholder-shown) + .form-label {
     transform: translate(-40px, -40px);
@@ -214,3 +155,103 @@ textarea {
     fill: $accent-color;/*меняет цвет иконок в модалке*/
     outline-color: $accent-color;
 }
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $light-shadow-3;
+    opacity: 1;
+}
+
+.backdrop.is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;   
+}
+
+/*слой месседж*/
+.message {
+    margin-top: 40px;
+    margin-right: auto;
+    margin-bottom: 12px;
+    margin-left: auto;
+    width: 448px;
+    left: 0;
+    top: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $dark-color;
+}
+
+.btn-close {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px;
+    border-color: $main-color;
+    fill: $white-color;
+
+    & :hover,
+    & :focus {
+        fill: $accent-color;
+        fill: url('./images/symbol-defs5.svg#icon-closeblue');
+    }   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ссылка условия договора в модалке*/
+
+/* чекбокс в модалке */
+
+
+
+/* кнопка отправить в модалке */
+.submit {
+    position: absolute;
+    top: 491px;
+    right: 160px;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 40px;
+    color: $white-color;
+    background-color: $accent-color;
+    transition: transform 250ms $timing-function;
+    border-radius: 4px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+

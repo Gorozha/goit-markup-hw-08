@@ -38,15 +38,11 @@
     cursor: pointer;
     margin-right: 8px;
     margin-bottom: 50px;
-}
-/* портфолио кнопки */
-.butt a:hover {
-    background: $accent-color;
-    color: $white-color;
-    box-sizing: inherit;
-    border-radius: 4px;    
-}
-/* главная шапка навигация */
-.nav-links .menu {
-    margin-right: 50px;
+
+    & a:hover {
+        background: $accent-color;
+        color: $white-color;
+        box-sizing: inherit;
+        border-radius: 4px;
+    }    
 }
