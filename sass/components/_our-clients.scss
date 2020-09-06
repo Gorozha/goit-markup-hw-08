@@ -1,8 +1,8 @@
- /*постоянные клиенты*/
+ 
 .costumer {
     width: 1200px;
 }
-/*постоянные клиенты*/
+
 .topic2 {
     padding-top: 94px;
     padding-bottom: 50px;
@@ -15,14 +15,14 @@
     letter-spacing: 0.03em;
     color: $dark-color;
 }
-/* постоянные клиенты c*/
+ 
 .costumer-list {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 94px;
     fill: currentColor;
 }
-/*постоянные клиенты*/
+
 .all-costumer {
     display:flex;
     align-items: center;
@@ -34,12 +34,11 @@
     border: 1px solid $light-gray;
     box-sizing: border-box;
     border-radius: 4px;
+    &:nth-child(6n) {
+        margin-right: 0;
+    }
 }
-/*постоянные клиенты*/
-.all-costumer:nth-child(6n) {
-    margin-right: 0;
-}
-/*постоянные клиенты*/
+
 .all-costumer:hover,
 .all-costumer:focus {
     fill: $accent-color;   

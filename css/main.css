@@ -1677,12 +1677,10 @@ textarea {
   background-color: #2196F3;
 }
 
-/*постоянные клиенты*/
 .costumer {
   width: 1200px;
 }
 
-/*постоянные клиенты*/
 .topic2 {
   padding-top: 94px;
   padding-bottom: 50px;
@@ -1696,7 +1694,6 @@ textarea {
   color: #212121;
 }
 
-/* постоянные клиенты c*/
 .costumer-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1707,7 +1704,6 @@ textarea {
   fill: currentColor;
 }
 
-/*постоянные клиенты*/
 .all-costumer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1728,12 +1724,10 @@ textarea {
   border-radius: 4px;
 }
 
-/*постоянные клиенты*/
 .all-costumer:nth-child(6n) {
   margin-right: 0;
 }
 
-/*постоянные клиенты*/
 .all-costumer:hover,
 .all-costumer:focus {
   fill: #2196F3;
