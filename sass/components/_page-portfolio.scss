@@ -1,9 +1,14 @@
+/* портфолио шапка сайта*/
+.container-portfolio {
+    display: flex; 
+    width: 1170px;
+    background-color: $white-color;
+}
 /* портфолио проэкты */
 .chapter {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;

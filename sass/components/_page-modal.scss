@@ -1,3 +1,17 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $light-shadow-3;
+    opacity: 1;
+}
+.backdrop.is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+}
 /*стилизация модалки*/
 .modal {
     position: absolute;
@@ -11,7 +25,7 @@
     max-height: 581px;
     background-color: $white-color;
 }
-/
+
 /*слой месседж*/
 .message {
     margin-top: 40px;
@@ -47,13 +61,11 @@
 
     fill: url(./images/symbol-defs5.svg#icon-closeblue);
 }
-.btn-close:hover {
+/*.btn-close:hover {
     fill: var(--accent-color);
     background-color: brown;
     color: tomato;
-}
-
-
+}*/
 
 /*стилизация модалки*/
 .form-field  {
@@ -64,10 +76,8 @@
     height: 40px;
     margin-bottom: 20px;
     border-radius: 4px;
-
     margin-right: auto;
-    margin-left: auto;
-    
+    margin-left: auto;   
 }
 
 .form-field label {

@@ -80,7 +80,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
+    /*line-height: 24px;*/
     letter-spacing: 0.03em;
     margin-bottom: 60px;
 }
@@ -91,7 +91,8 @@
 /* футер */
 .footer-social {
     margin-top: 72px;
-    width: 270px;
+    margin-bottom: 100px;      
+    width: 270px; 
 }
 /* футер */
 .follow {

@@ -74,6 +74,10 @@ header*/
     padding-bottom: 32px;
 
 }
+/* главная шапка навигация */
+.nav-links .menu {
+    margin-right: 50px;
+}
 /* header, для всех эл. кроме посл. отступ 50*/
 .nav-links .menu:last-child {
     margin-right: 0;

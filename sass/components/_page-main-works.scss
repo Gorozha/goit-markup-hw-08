@@ -1,0 +1,71 @@
+/*особенности*/
+.container-features {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+}
+
+/*особенности*/
+.title-features {
+    display: flex;
+    padding: 0;
+    width: 1200px;
+    margin-bottom: 94px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto; 
+}
+/*особенности*/
+.chapter1 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+/*особенности*/
+.features {
+    width: 270px;
+    padding: 0;
+    margin-right: 30px;
+}
+/*особенности*/
+.features:nth-child(4n) {
+    margin-right: 0;
+}
+/*особенности*/
+.features-icon {
+    display: flex;
+    background-color: $white-button;
+    height: 120px;
+}
+
+/*особенности*/
+.icon {
+    border-radius: 4px;
+    position: relative;
+    top: 20%;    
+}
+
+/*особенности*/
+.rubric {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0.03em;
+    color: $main-color;
+}
+
+.topic {
+    padding: 0;
+    margin-bottom: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $dark-color;
+}

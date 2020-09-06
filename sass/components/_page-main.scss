@@ -1,0 +1,71 @@
+/*уникальный контент страницы*/
+.gray-fill {   
+    max-width: 1600px;
+    height: 600px;
+    margin-bottom: 94px;
+    margin-right: auto;
+    margin-left: auto; 
+    background-image: linear-gradient(
+        $gray-fill,
+        $gray-fill
+    ),                        
+    url("../images/header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*уникальный контент страницы*/
+.main-content {   
+    width: 696px;    
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;   
+    margin-top: 200px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $white-color;
+}
+/*уникальный контент страницы*/
+.order-button {   
+    padding-top: 10px;
+    padding-right: 32px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    border-radius: 4px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 200px;/* 200 от края картинки*/
+    margin-left: auto;     
+    min-width: 200px;    
+    background-color: $accent-color;
+    transition: transform 250ms $timing-function;
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: $white-color;   
+}
+/* уникальный контент страницы */
+.content {
+    text-align: center;
+    width: 1200px;
+}
+
+.title-works {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $main-color;
+}
