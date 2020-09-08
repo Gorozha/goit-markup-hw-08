@@ -8,32 +8,74 @@
 .our-team {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 94px;
+    justify-content: center;
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 60px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-bottom: 60px; 
+    }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 94px;
+    }
 }
 /*наша команда*/
 .container-team {
-    width: 1200px;
+   /* width: 1200px;for mob*/
+    width: 100%;
 }
 /*наша команда*/
 .topic3 {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
     color: $dark-color;
-    padding-top: 94px;
-    padding-bottom: 50px;
 
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        font-size: 28px;
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        font-size: 28px;
+        padding-top: 60px;
+        padding-bottom: 30px;                        
+    }
+    
+    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+        font-size: 36px;
+        padding-top: 94px;
+        padding-bottom: 50px;                        
+    }
 }
 /*наша команда*/
 .all-team {
-    width: 270px;
-    margin-right: 30px;
-    box-shadow: 0px 1px 3px $light-shadow-1 0px 1px 1px $light-shadow-2, 0px 2px 1px $light-shadow-3;
-border-radius: 0px 0px 4px 4px;
+    /*width: 270px;*/
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        width: 450px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) { 
+        width: 354px;               
+        margin: 15px;        
+    }
+    
+    @media screen and (min-width: 1200px) and (max-width: 1600px) { 
+        width: 270px;               
+        margin-right: 30px;
+        margin-bottom: 60px;
+    }    
+    box-shadow: 0px 1px 3px $light-shadow-1,
+                 0px 1px 1px $light-shadow-2,
+                  0px 2px 1px $light-shadow-3;
+    border-radius: 0px 0px 4px 4px;
 }
 /*наша команда*/
 .all-team:nth-child(4n) {
@@ -41,6 +83,7 @@ border-radius: 0px 0px 4px 4px;
 }
 /*наша команда*/
 .team-photo {
+    width: 100%;
     padding-bottom: 30px;
 }
 /*наша команда*/
