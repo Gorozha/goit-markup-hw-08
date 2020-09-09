@@ -2,29 +2,79 @@
 .container-features {
     display: flex;
     flex-wrap: wrap;
-    width: 1200px;
+    @media screen and (min-width: 480px) {
+        width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+
+    
 }
 
 /*особенности*/
 .title-features {
-    display: flex;
-    padding: 0;
-    width: 1200px;
-    margin-bottom: 94px;
-    margin-top: 0;
-    margin-right: auto;
-    margin-left: auto; 
+
+    @media screen and (min-width: 480px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        padding: 0;
+        margin-bottom: 94px;
+        margin-top: 0;
+        margin-right: auto;
+        margin-left: auto; 
+    }
 }
 /*особенности*/
 .chapter1 {
-    margin-top: 30px;
-    margin-bottom: 10px;
+    @media screen and (min-width: 480px) {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+        margin-top: 30px;
+        margin-bottom: 10px; 
+    }
+    @media screen and (min-width: 1200px) {
+        margin-top: 30px;
+        margin-bottom: 10px;               
+    }
+
 }
 /*особенности*/
 .features {
-    width: 270px;
-    padding: 0;
-    margin-right: 30px;
+    @media screen and (min-width: 480px) {
+        width: 100%;
+        padding: 15px;
+        font-size: 14px;
+    }
+    @media screen and (min-width: 768px) {
+        /*flex-basis: calc((100% - 4 * 15) / 2);*/
+        /*padding: 15px;*/
+        width: 354px;
+        font-size: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 0;
+        margin-right: 30px;
+    }
+
+
 }
 /*особенности*/
 .features:nth-child(4n) {
@@ -39,9 +89,17 @@
 
 /*особенности*/
 .icon {
-    border-radius: 4px;
-    position: relative;
-    top: 20%;    
+    @media screen and (min-width: 480px) {
+        border-radius: 4px;
+        position: relative;
+        top: 20%; 
+        left: 12% ;
+    }
+    @media screen and (min-width: 768px) {
+        border-radius: 4px;
+
+    }
+   
 }
 
 /*особенности*/

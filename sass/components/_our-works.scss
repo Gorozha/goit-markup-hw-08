@@ -1,4 +1,9 @@
 /*чем мы занимаемся*/
+.topic-hobby {
+    @media screen and (min-width: 480px) {
+        display: none;
+    }
+}
 .hobby {
     display: flex;
 }
