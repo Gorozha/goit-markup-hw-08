@@ -1,10 +1,67 @@
 
 .dark-background {
-    position: relative;
-    background: $dark-background;
+    @media screen and (min-width: 480px) {
+        position: relative;
+        background: $dark-background;
+        width: 100%;
+        height: 603px;
+        margin: auto;
+    }
+    @media screen and (min-width: 768px) {
+
+    }
+  
+    @media screen and (min-width: 1200px) {
+
     width: 1600px;
     height: 252px;
     margin: auto;
+    }
+}
+
+.footer-adr {
+    @media screen and (min-width: 480px) {
+        position: absolute;
+        width: 100%;
+        top: 1%;
+        left: 33%;
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and (min-width: 768px) {
+
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        width: 270px;
+        margin-right: 30px;
+    }
+
+}
+
+.footer-logotype {
+    @media screen and (min-width: 480px) {
+        position: absolute;
+        display: flex;
+        top: -65%;
+        left: 4%;
+    }
+    @media screen and (min-width: 768px) {
+
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;    
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 31px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        letter-spacing: 0.03em;
+    }
 }
 
 .follow {
@@ -20,22 +77,19 @@
 
 
 .footer-content {
- 
-    display: flex;
-    width: 1600px;
+    @media screen and (min-width: 480px) {
+        width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        width: 1600px;
+    }
+
 }
 
-.footer-logotype {
-    display: flex;
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 31px;
-    margin-top: 60px;
-    margin-bottom: 20px;
-    letter-spacing: 0.03em;
-}
 
 .footer-logo {
     display: flex;
@@ -60,12 +114,7 @@
     color: $white-color; 
 }
 
-.footer-adr {
-    display: flex;
-    flex-direction: column;
-    width: 270px;
-    margin-right: 30px;
-}
+
 
 .footer-adr-mail,
 .footer-adr-tel {
@@ -73,6 +122,13 @@
 }
 
 .adr-city{
+    @media screen and (min-width: 480px) {
+        position: absolute;
+        top: -41px;
+        left: -32%;
+        margin: 108px 122px 382px 122px;
+        text-align: center;
+    }
     display: flex;
     flex-direction: column;
     width: 231px;
@@ -88,16 +144,35 @@
 }
 
 .footer-social {
-    margin-top: 72px;
+    @media screen and (min-width: 480px) {
+        position: absolute;
+        margin-bottom: 60px;
+        height: 80px;
+        width: auto;
+        left: 135px;
+        top: 283px;
+    }
+    @media screen and (min-width: 768px) {
+
+    }
+    @media screen and (min-width: 1200px) {
+        margin-top: 72px;
+        width: 270px; 
+    }
+    
     margin-bottom: 100px;      
-    width: 270px; 
+    
 }
 
 .follow {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
-    color: $white-color;
+    @media screen and (min-width: 480px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 20px;
+        color: $white-color;
+    }
+
 }
 
 .social-links {

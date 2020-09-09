@@ -9,6 +9,17 @@
 /*стилизация подписки*/
 
 .foot-btn {
+    @media screen and (min-width: 480px) {
+        position: absolute;
+        margin: 20px 140px 60px 140px;
+        top: 472px;
+    }
+    @media screen and (min-width: 768px) {
+
+    }
+    @media screen and (min-width: 1200px) {
+
+    }
     position: absolute;
     top: 0;
     right: 0;
@@ -34,9 +45,19 @@
 }
 /**/
 .form-label-foot {
-    top: 0;
-    left: 823px;
-    width: 219px;
+    @media screen and (min-width: 480px) {
+        top: 387px;
+        left: 25%;
+        width: 100%;
+        margin: 0;
+    }
+    @media screen and (min-width: 768px) {
+
+    }
+    @media screen and (min-width: 1200px) {
+
+    }
+
     margin-top: -14px;
     margin-top: 72px;
     margin-bottom: 20px;
@@ -52,6 +73,17 @@
 }
 /*кнопка отправки в подписке*/
 .form-input-foot {
+    @media screen and (min-width: 480px) {
+        position: absolute;
+        margin: 423px 15px 130px 15px;
+        top: 0;
+        width: 94%;
+        height: 50px;
+    }
+    @media screen and (min-width: 768px) {
+
+    }
+    @media screen and (min-width: 1200px) {
     position: absolute;
     top: 0;
     right: 26%;
@@ -63,7 +95,8 @@
     margin-bottom: 94px;
     border-radius: 4px;
     border:1px solid $main-color;
-    background: $dark-background;   
+    background: $dark-background;
+    }   
 }
 /*иконка в кнопке подписки*/
 .btn-telega {
