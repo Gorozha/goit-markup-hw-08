@@ -818,6 +818,17 @@ header*/
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer-logotype {
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 115px;
+    margin-bottom: 20px;
+    top: -66px;
+    left: -33%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-logotype {
     display: -webkit-box;
@@ -892,23 +903,6 @@ header*/
   color: #757575;
 }
 
-.adr-city {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 231px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  margin-bottom: 60px;
-}
-
 @media screen and (min-width: 480px) {
   .adr-city {
     position: absolute;
@@ -919,8 +913,33 @@ header*/
   }
 }
 
-.adr-city p {
-  color: #ffffff;
+@media screen and (min-width: 768px) {
+  .adr-city {
+    position: absolute;
+    margin-left: 76px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .adr-city {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 231px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    margin-bottom: 60px;
+  }
+  .adr-city p {
+    color: #ffffff;
+  }
 }
 
 .footer-social {
@@ -1060,9 +1079,12 @@ header*/
 @media screen and (min-width: 768px) {
   .main-content {
     width: 360px;
+    height: auto;
     margin-top: 118px;
+    margin-bottom: 30px;
     margin-right: auto;
     margin-left: auto;
+    line-height: 42px;
     font-size: 26px;
   }
 }
@@ -1106,22 +1128,30 @@ header*/
   color: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .order-button {
+    margin-bottom: 118px;
+  }
+}
+
 /* уникальный контент страницы */
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .content {
     width: 100%;
     text-align: center;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .content {
+    max-width: 768px;
     width: 100%;
+    height: auto;
     text-align: center;
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .content {
     width: 1200px;
     text-align: center;
@@ -2013,7 +2043,7 @@ textarea {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .all-team {
     width: 450px;
     text-align: center;
@@ -2021,14 +2051,13 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .all-team {
-    width: 354px;
-    margin: 15px;
+    width: calc((100% - 15px * 4) / 2);
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .all-team {
     width: 270px;
     margin-right: 30px;
@@ -2164,17 +2193,21 @@ textarea {
   }
 }
 
-.costumer-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  /*: -15px;*/
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  fill: currentColor;
+@media screen and (min-width: 768px) {
+  .costumer-list {
+    /*width: calc((100% - 6 * 15px) / 3);*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    /*margin: -15px;*/
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    fill: currentColor;
+    margin-bottom: 30px;
+  }
 }
 
 .all-costumer {
@@ -2266,7 +2299,7 @@ textarea {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 768px;
+    width: 100%;
   }
 }
 

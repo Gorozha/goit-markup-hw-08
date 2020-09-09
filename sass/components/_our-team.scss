@@ -56,18 +56,18 @@
 /*наша команда*/
 .all-team {
     /*width: 270px;*/
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (min-width: 480px)  {
         width: 450px;
         text-align: center;
         margin-bottom: 30px;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) { 
-        width: 354px;               
-        margin: 15px;        
+    @media screen and (min-width: 768px)  { 
+        width: calc((100% - 15px * 4) / 2);               
+               
     }
     
-    @media screen and (min-width: 1200px) and (max-width: 1600px) { 
+    @media screen and (min-width: 1200px)  { 
         width: 270px;               
         margin-right: 30px;
         margin-bottom: 60px;
