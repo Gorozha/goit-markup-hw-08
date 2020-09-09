@@ -1,12 +1,21 @@
 /* портфолио кнопки */
 .box-button {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    width: 611px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0;
+    @media screen and (min-width: 480px) {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        
+    }
+    @media screen and (min-width: 768px) {
+
+    }
+    @media screen and (min-width: 1200px) {
+        justify-content: space-between;
+        width: 611px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+        
 }
 /* портфолио кнопки */
 .list-buttons li:not(:last-child) {
@@ -21,6 +30,9 @@
 }
 /* портфолио кнопки */
 .butt {
+    @media screen and (min-width: 480px) {
+        margin-bottom: 0;
+    }
     display: flex;
     justify-content: center ;
     height: 100%;

@@ -11,18 +11,28 @@
 /* header */
 .container-block {
     display: flex; 
-    width: 1200px;
+    /*width: 1200px;*/
 }
 /* выровнял текст
 header*/
 .container-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start ;
+    @media screen and (min-width: 480px) {   
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start ;
+        width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
   
 }
 /* header */
 .logotype {
+    @media screen and (min-width: 480px) {
+        margin: 0;
+    }
+
     display: flex;
     width: 153px;
     padding-left: 0px;
@@ -46,6 +56,9 @@ header*/
 }
 /* header */
 .log {
+    @media screen and (min-width: 480px) {
+        margin: 0;
+    }
     display: flex;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -61,6 +74,16 @@ header*/
 }
 
 .nav-links {
+    @media screen and (min-width: 480px) {
+        display: block;
+        margin: 0;
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        position: absolute;
+        left: 30%;
+
+    }
     display: flex;
     font-family: Roboto;
     font-style: normal;
@@ -89,21 +112,33 @@ header*/
     display: flex;
     justify-content: start;
     
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-        margin-right: 0;
+    @media screen and (min-width: 480px)  {
+        display: block;
+        margin: 0;
         align-items: center;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {                
-    
+    @media screen and (min-width: 768px)  {                
+        display: flex;
     }
 
-    @media screen and (min-width: 1200px) and (max-width: 1600px){                
+    @media screen and (min-width: 1200px) {                
         margin-left: 305px;
     }        
 }
 
 .pin {
+    @media screen and (min-width: 768px)  {
+        position: absolute;
+        
+        top: 1px;
+        right: 2px;
+        margin-right: 15px;
+        margin-bottom: 5px;
+        margin-top: 21px;
+        padding: 0;
+        letter-spacing: 0.14em;
+    }
     display: flex;
    align-items: center;
    justify-content: space-between;
@@ -130,6 +165,15 @@ header*/
 }
 
 .key {
+    @media screen and (min-width: 768px)  {
+        position: absolute;
+        top: 40px;
+        right: 0;
+        margin-right: 30px;
+        margin-top: 5px;
+        margin-bottom: 21px;
+        padding: 0;
+    }
     display: flex;
     align-items: center;
     color: $dark-color;
@@ -195,6 +239,9 @@ header*/
     color: $main-color;        
 }
 .line {
+    @media screen and (min-width: 480px) {
+        margin: 0;
+    }
     width: 100%;
     color: $main-color;
     height: 0,5px;
