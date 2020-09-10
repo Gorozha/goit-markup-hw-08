@@ -48,7 +48,8 @@
 }
 /**/
 .form-label-foot {
-    @media screen and (min-width: 480px) {        
+    @media screen and (min-width: 480px) { 
+        position: absolute;       
         top: 387px;
         left: 25%;
         width: 100%;
@@ -86,6 +87,7 @@
         position: absolute;
         margin: 423px 15px 130px 15px;
         top: 0;
+        right: -1%;
         width: 94%;
         height: 50px;
     }

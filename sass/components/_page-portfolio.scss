@@ -22,12 +22,17 @@
         width: 100%;
         margin-bottom: 60px;
     }
+    @media screen and (min-width: 768px) {
+
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        margin-bottom: 94px;
+    }
     display: flex;
-    flex-wrap: wrap;
-    width: 1200px;
+    flex-wrap: wrap;    
     margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 94px;
+    margin-right: auto;   
 }
 
 .elements-projects {
@@ -42,7 +47,6 @@
     }
     @media screen and (min-width: 768px) {
         width: calc((100% - 30px) / 2);
-
     }
     @media screen and (min-width: 1200px) { 
          
@@ -110,6 +114,7 @@
     @media screen and (min-width: 480px) {
         width: 100%;
         height: auto;
+        margin: 0;
     }
     width: 322px;
     height: 70px;

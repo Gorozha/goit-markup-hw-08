@@ -327,6 +327,10 @@ html {
           box-sizing: inherit;
 }
 
+* {
+  outline: 1px solid green;
+}
+
 body {
   color: #212121;
   background-color: #ffffff;
@@ -917,9 +921,14 @@ header*/
   .adr-city {
     position: absolute;
     top: -41px;
-    left: -32%;
+    left: -28%;
     margin: 108px 122px 382px 122px;
     text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -927,6 +936,11 @@ header*/
   .adr-city {
     position: absolute;
     margin-left: 76px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -1245,6 +1259,8 @@ header*/
 @media screen and (min-width: 768px) {
   .modal {
     position: absolute;
+    top: 500px;
+    left: 38%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     width: 100%;
@@ -1652,6 +1668,7 @@ textarea {
 
 @media screen and (min-width: 480px) {
   .form-label-foot {
+    position: absolute;
     top: 387px;
     left: 25%;
     width: 100%;
@@ -1686,6 +1703,7 @@ textarea {
     position: absolute;
     margin: 423px 15px 130px 15px;
     top: 0;
+    right: -1%;
     width: 94%;
     height: 50px;
   }
@@ -1755,16 +1773,21 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
 }
 
 @media screen and (min-width: 480px) {
   .list-of-projects {
     width: 100%;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-of-projects {
+    width: 1200px;
+    margin-bottom: 94px;
   }
 }
 
@@ -1860,6 +1883,7 @@ textarea {
   .block {
     width: 100%;
     height: auto;
+    margin: 0;
   }
 }
 
@@ -1883,6 +1907,15 @@ textarea {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .box-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 15px;
   }
 }
 
@@ -2285,6 +2318,20 @@ textarea {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .costumer-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    /*width: calc((100% - 4 * 15px) / 2);*/
+  }
+}
+
 @media screen and (min-width: 768px) {
   .costumer-list {
     /*width: calc((100% - 6 * 15px) / 3);*/
@@ -2293,10 +2340,10 @@ textarea {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    /*margin: -15px;*/
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    /*margin: -15px;*/
     fill: currentColor;
     margin-bottom: 30px;
   }
@@ -2324,7 +2371,9 @@ textarea {
 
 @media screen and (min-width: 480px) {
   .all-costumer {
+    /*width: calc((100% - 4 * 15px) / 2);*/
     margin: 15px;
+    padding: 0;
   }
 }
 
