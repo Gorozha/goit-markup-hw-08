@@ -10,27 +10,35 @@
 
 /* header */
 .container-block {
-    display: flex; 
+    /*display: flex;*/
     /*width: 1200px;*/
 }
 /* выровнял текст
 header*/
 .container-nav {
-    @media screen and (min-width: 480px) {   
+    @media screen and (min-width: 480px) and (max-width: 767px) {   
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start ;
         width: 100%;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px)  {
         width: 768px;
     }
   
 }
 /* header */
 .logotype {
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 480px) and (max-width: 767px)  {
         margin: 0;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px)  {
+
+    }
+    @media screen and (min-width: 1200px) {
+        position: relative;
+        margin-left: 215px;
+        margin-right: 85px;
     }
 
     display: flex;
@@ -56,7 +64,7 @@ header*/
 }
 /* header */
 .log {
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 480px) and (max-width: 767px)  {
         margin: 0;
     }
     display: flex;
@@ -74,17 +82,22 @@ header*/
 }
 
 .nav-links {
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 480px) and (max-width: 767px)  {
         display: block;
         margin: 0;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px)  {
         display: flex;
         position: absolute;
         left: 30%;
-
     }
-    display: flex;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        position: relative;
+        left: 0;
+        
+    }
+    
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -112,13 +125,13 @@ header*/
     display: flex;
     justify-content: start;
     
-    @media screen and (min-width: 480px)  {
+    @media screen and (min-width: 480px) and (max-width: 767px)   {
         display: block;
         margin: 0;
         align-items: center;
     }
 
-    @media screen and (min-width: 768px)  {                
+    @media screen and (min-width: 768px) and (max-width: 1199px)   {                
         display: flex;
     }
 
@@ -128,9 +141,8 @@ header*/
 }
 
 .pin {
-    @media screen and (min-width: 768px)  {
-        position: absolute;
-        
+    @media screen and (min-width: 768px) and (max-width: 1199px)   {
+        position: absolute;        
         top: 1px;
         right: 2px;
         margin-right: 15px;
@@ -139,9 +151,30 @@ header*/
         padding: 0;
         letter-spacing: 0.14em;
     }
-    display: flex;
+    @media screen and (min-width: 1200px) {
+        /*display: flex;
+        align-items: center;
+        justify-content: space-between;*/
+        position: absolute;
+        top: -20px;
+        right: 13%;
+        padding-top: 32px;
+        padding-right: 0;
+        padding-bottom: 32px;
+        margin-right: 60px;
+        color: $dark-color;
+        text-decoration: none;
+        cursor: pointer;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+    }
+   /* display: flex;
    align-items: center;
-   justify-content: space-between;
+   justify-content: space-between;*/
     padding-top: 32px;
     padding-right: 0;
     padding-bottom: 32px;
@@ -165,7 +198,7 @@ header*/
 }
 
 .key {
-    @media screen and (min-width: 768px)  {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         position: absolute;
         top: 40px;
         right: 0;
@@ -173,6 +206,11 @@ header*/
         margin-top: 5px;
         margin-bottom: 21px;
         padding: 0;
+    }
+    @media screen and (min-width: 1200px) {
+        position: absolute;
+        top: 28px;
+        right: 4%;
     }
     display: flex;
     align-items: center;
@@ -239,7 +277,7 @@ header*/
     color: $main-color;        
 }
 .line {
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 480px) and (max-width: 767px)  {
         margin: 0;
     }
     width: 100%;

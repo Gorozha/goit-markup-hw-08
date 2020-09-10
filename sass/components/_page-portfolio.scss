@@ -1,7 +1,8 @@
 /* портфолио шапка сайта*/
 .container-portfolio {
     display: flex; 
-    width: 1170px;
+    /*width: 1170px;*/
+    width: 100%;
     background-color: $white-color;
 }
 
@@ -17,13 +18,24 @@
 }
 
 
+
+
 .list-of-projects {
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        .img-box:nth-child(1n) {
+            position: relative;
+            left: 40px;
+        }
         width: 100%;
+        height: auto;
         margin-bottom: 60px;
     }
-    @media screen and (min-width: 768px) {
-
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        .img-box:nth-child(1n) {
+            left: -1px;        
+            width: 100%;
+            height: auto;
+        }
     }
     @media screen and (min-width: 1200px) {
         width: 1200px;
@@ -35,18 +47,22 @@
     margin-right: auto;   
 }
 
+
 .elements-projects {
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
         width: 100%;
         position: relative;
         display: block;
-        left: 40px;
+        /*left: 40px;*/
         margin-bottom: 30px;
         margin-right: auto;
         margin-left: auto;
     }
-    @media screen and (min-width: 768px) {
-        width: calc((100% - 30px) / 2);
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: calc(100% / 2 - 60px);
+        position: relative;
+        width: 354px;
+        left: -8px;
     }
     @media screen and (min-width: 1200px) { 
          
@@ -59,12 +75,6 @@
     }
 }
 
-/*.elements-projects {
-    margin-bottom: 30px;
-    &:last-child {
-        margin-bottom: 60px;
-    }
-}*/
 
 .elements-projects:nth-child(3n) {
     margin-right: 0;
@@ -76,11 +86,27 @@
 
 
 .overlay {
-    width: 370px;
-    height: 294px;
-    position: relative;
-    overflow: hidden;
-    opacity: 1;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        width: 450px;
+        height: 294px;
+        position: relative;
+        overflow: hidden;
+        opacity: 1;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) { 
+        width: 354px;
+        height: 294px;
+        position: relative;
+        overflow: hidden;
+        opacity: 1;
+    }
+    @media screen and (min-width: 1200px) {    
+        width: 370px;
+        height: 294px;
+        position: relative;
+        overflow: hidden;
+        opacity: 1;
+    }
 }
 
   .note  {
@@ -111,23 +137,27 @@
 }
 
 .block {
-    @media screen and (min-width: 480px) {
-        width: 100%;
-        height: auto;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        width: 450px;
+        height: 110px;
         margin: 0;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 354px;
+        height: auto;
     }
     width: 322px;
     height: 70px;
     margin: 20px 24px;
 
     & h3 {
-        padding-top: 9px;
-        padding-bottom: 9px;
-        margin-bottom: 4px;
+        padding-top: 25px;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
     }
 }
 
 .block p {
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 5px;
+    padding-bottom: 25px;
 }

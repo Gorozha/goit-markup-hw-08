@@ -9,12 +9,12 @@
 /*стилизация подписки*/
 
 .foot-btn {
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 480px) and (max-width: 767px)  {
         position: absolute;
         margin: 20px 140px 60px 140px;
         top: 472px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px)  {
         position: absolute;
         margin: 0px 277px 66px 291px;
         top: 348px;
@@ -48,19 +48,19 @@
 }
 /**/
 .form-label-foot {
-    @media screen and (min-width: 480px) { 
+    @media screen and (min-width: 480px) and (max-width: 767px)  { 
         position: absolute;       
         top: 387px;
         left: 25%;
-        width: 100%;
+        width: 48%;
         margin: 0;
         color: $white-color;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px)  {
         position: absolute;
         top: 250px;
-        left: 32%;
-        width: 100%;
+        left: 35%;
+        width: 30%;
        
         margin-bottom: 20px;
         color: $white-color;
@@ -76,14 +76,14 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.01em;
     text-transform: uppercase;
     color: $white-color;
     
 }
 /*кнопка отправки в подписке*/
 .form-input-foot {
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 480px) and (max-width: 767px)  {
         position: absolute;
         margin: 423px 15px 130px 15px;
         top: 0;
@@ -91,7 +91,7 @@
         width: 94%;
         height: 50px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px)  {
         position: absolute;
         margin: 0px 152px 130px 166px;
         width: 450px;
