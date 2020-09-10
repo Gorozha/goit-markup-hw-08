@@ -773,6 +773,16 @@ header*/
   }
 }
 
+@media screen and (min-width: 768px) {
+  .dark-background {
+    position: relative;
+    background: #2F303A;
+    width: 100%;
+    height: 463px;
+    margin: auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .dark-background {
     width: 1600px;
@@ -957,6 +967,17 @@ header*/
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer-social {
+    position: absolute;
+    margin-right: 89px;
+    margin-top: 65px;
+    margin-bottom: 0;
+    top: 0;
+    right: 0;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-social {
     margin-top: 72px;
@@ -981,15 +1002,51 @@ header*/
   }
 }
 
-.social-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  color: #ffffff;
+@media screen and (min-width: 768px) {
+  .follow {
+    position: absolute;
+    margin-top: 65px;
+    margin-bottom: 20px;
+    top: -64px;
+    right: 4%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social-links {
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    right: 0;
+    top: 36px;
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    color: #ffffff;
+  }
 }
 
 .footer-icon:not(:last-child) {
@@ -1572,12 +1629,17 @@ textarea {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .foot-btn {
+    position: absolute;
+    margin: 0px 277px 66px 291px;
+    top: 348px;
+    width: 200px;
+  }
+}
+
 /**/
 .form-label-foot {
-  margin-top: -14px;
-  margin-top: 72px;
-  margin-bottom: 20px;
-  position: absolute;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -1594,6 +1656,27 @@ textarea {
     left: 25%;
     width: 100%;
     margin: 0;
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form-label-foot {
+    position: absolute;
+    top: 250px;
+    left: 32%;
+    width: 100%;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-label-foot {
+    margin-top: -14px;
+    margin-bottom: 20px;
+    position: absolute;
+    margin-top: 72px;
   }
 }
 
@@ -1605,6 +1688,15 @@ textarea {
     top: 0;
     width: 94%;
     height: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form-input-foot {
+    position: absolute;
+    margin: 0px 152px 130px 166px;
+    width: 450px;
+    top: 285px;
   }
 }
 

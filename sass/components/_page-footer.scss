@@ -8,7 +8,11 @@
         margin: auto;
     }
     @media screen and (min-width: 768px) {
-
+        position: relative;
+        background: $dark-background;
+        width: 100%;
+        height: 463px;
+        margin: auto;
     }
   
     @media screen and (min-width: 1200px) {
@@ -164,6 +168,12 @@
         top: 283px;
     }
     @media screen and (min-width: 768px) {
+        position: absolute;
+        margin-right: 89px;
+        margin-top: 65px;
+        margin-bottom: 0;
+        top: 0;
+        right: 0;
 
     }
     @media screen and (min-width: 1200px) {
@@ -183,13 +193,38 @@
         margin-bottom: 20px;
         color: $white-color;
     }
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        margin-top: 65px;
+        margin-bottom: 20px;
+        top: -64px;
+        right: 4%;
+    }
+    @media screen and (min-width: 1200px) {
+
+    }
 
 }
 
 .social-links {
-    display: flex;
-    flex-direction: row;
-    color: $white-color;
+    @media screen and (min-width: 480px) {
+        display: flex;
+        flex-direction: row;
+        color: $white-color;
+    }
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        margin-right: auto;
+        margin-left: auto;
+        right: 0;
+        top: 36px;
+        color: $white-color;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        color: $white-color;
+    }  
 }
 
 .footer-icon:not(:last-child) {
