@@ -51,12 +51,12 @@
     
     @media screen and (min-width: 1200px) and (max-width: 1600px) {
         position: relative;
-        left: 27%;
+        left: 0;
         width: 696px;
         margin-top: 200px;
         margin-bottom: 30px;
-        margin-right: 0;
-        margin-left: 0;
+        margin-right: auto;
+        margin-left: auto;
         line-height: 60px;        
         font-size: 44px; 
     }  
@@ -76,7 +76,7 @@
     }
     @media screen and (min-width: 1200px) and (max-width: 1600px) {
         position: relative;
-        left: 25%;
+        left: 0;
         margin-bottom: 200px;
     }   
     padding-top: 10px;

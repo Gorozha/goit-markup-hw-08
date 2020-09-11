@@ -23,7 +23,7 @@
     @media screen and (min-width: 1200px) and (max-width: 1600px) {
         position: absolute;
         margin: 0;
-        top: 50%;
+        top: 69%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
@@ -96,13 +96,7 @@
         transition: transform 250ms $timing-function;
     }    
 }
-/*.js-speaker-form {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-}*/
+
 
 .comment {
     @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -196,6 +190,9 @@ textarea {
         display: none;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: none;
+    }
+    @media screen and (min-width: 1200px) and (max-width: 1600px) {
         display: none;
     }
     position: absolute;

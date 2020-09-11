@@ -9,10 +9,8 @@
         width: 768px;
     }
     @media screen and (min-width: 1200px) and (max-width: 1600px) {
-        width: 1200px;
-    }
-
-    
+        width: 100%;
+    }    
 }
 
 /*особенности*/
@@ -31,13 +29,12 @@
         width: 100%;
     }
     @media screen and (min-width: 1200px) and (max-width: 1600px) {
-        width: 1200px;
-        padding: 0;
-        margin-bottom: 94px;
-        margin-top: 0;
-        margin-right: auto;
-        margin-left: auto; 
-    }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        width: 100%;
+        height: auto;
+    }  
 }
 /*особенности*/
 .chapter1 {
@@ -54,7 +51,6 @@
         margin-top: 30px;
         margin-bottom: 10px;               
     }
-
 }
 /*особенности*/
 .features {
@@ -64,25 +60,38 @@
         font-size: 14px;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        /*flex-basis: calc((100% - 4 * 15) / 2);*/
-        /*padding: 15px;*/
         width: 354px;
         font-size: 14px;
         margin: 5px;
     }
     @media screen and (min-width: 1200px) and (max-width: 1600px) {
+        display: inline-block;
+        .features:nth-child(4n) {
+            margin-right: 0;
+        }
+        margin-right: 15px;       
+        width: 270px;
         padding: 0;
-        margin-right: 30px;
+        margin-bottom: 30px;
     }
-
-
 }
-/*особенности*/
-.features:nth-child(4n) {
+
+/*.features:nth-child(4n) {
     margin-right: 0;
-}
-/*особенности*/
+}*/
+
+
 .features-icon {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+
+    }
+    @media screen and (min-width: 768) and (max-width: 1199px) {
+
+    }
+    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+        width: 100%;
+
+    }
     display: flex;
     background-color: $white-button;
     width: 100%;
@@ -91,18 +100,21 @@
 
 /*особенности*/
 .icon {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-        border-radius: 4px;
+    @media screen and (min-width: 480px) and (max-width: 767px) {        
         position: relative;
         top: 20%; 
         left: 16% ;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        border-radius: 4px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {        
         position: relative;
         top: 24px;
         left: 8%;
-    }   
+    }
+    @media screen and (min-width: 768px) and (max-width: 1600px) {
+        position: relative;
+        top: 26px;
+    } 
+    border-radius: 4px;  
 }
 
 /*особенности*/
