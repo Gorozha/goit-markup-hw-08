@@ -21,7 +21,11 @@
         width: 200px;
     }
     @media screen and (min-width: 1200px) and (max-width: 1600px) {
-
+        position: absolute;
+        margin: 108px 216px 94px 0;
+        top: 672%;
+        left: 66%;
+        ;
     }
     position: absolute;
     top: 0;
@@ -99,7 +103,7 @@
         height: 50px;
     }
     @media screen and (min-width: 1200px) and (max-width: 1600px) {
-        top: 0;
+        top: 672%;
         position: absolute;
         right: 26%;
         width: 350px;

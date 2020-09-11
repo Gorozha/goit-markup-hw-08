@@ -13,8 +13,8 @@
     /*display: flex;*/
     width: 1200px;
 }
-/* выровнял текст
-header*/
+
+
 .container-nav {
     @media screen and (min-width: 480px) and (max-width: 767px) {   
         /*display: flex;
@@ -25,6 +25,10 @@ header*/
     }
     @media screen and (min-width: 768px) and (max-width: 1199px)  {
         width: 768px;
+        height: 80px;
+    }
+    @media screen and (min-width: 1200px) {
+
     }
   
 }
@@ -105,7 +109,8 @@ header*/
     @media screen and (min-width: 1200px) and (max-width: 1600px) {
         display: flex;
         position: relative;
-        left: 0;
+        left: 100%;
+        top: -80px;
         
     }
     
@@ -170,12 +175,12 @@ header*/
         align-items: center;
         justify-content: space-between;*/
         position: absolute;
-        top: -20px;
-        right: 13%;
+        top: 1px;
+        right: 11%;
         padding-top: 32px;
         padding-right: 0;
         padding-bottom: 32px;
-        margin-right: 60px;
+        margin-right: 5px;
         color: $dark-color;
         text-decoration: none;
         cursor: pointer;
@@ -204,13 +209,6 @@ header*/
     letter-spacing: 0.02em;
 }
 
-.pin::before {
-    content: "";
-    height: 11px;
-    background-image: url("./images/symbol-defs.svg#icon-envelope");
-    background-size: contain;
-}
-
 .key {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         position: absolute;
@@ -223,8 +221,8 @@ header*/
     }
     @media screen and (min-width: 1200px) and (max-width: 1600px) {
         position: absolute;
-        top: 28px;
-        right: 4%;
+        top: 1px;
+        right: 0;
     }
     display: flex;
     align-items: center;
@@ -242,6 +240,15 @@ header*/
     line-height: 16px;
     letter-spacing: 0.02em;
 }
+
+
+.pin::before {
+    content: "";
+    height: 11px;
+    background-image: url("./images/symbol-defs.svg#icon-envelope");
+    background-size: contain;
+}
+
 
 .key::before {
     content: "";
