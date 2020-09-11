@@ -12,7 +12,7 @@
         margin-bottom: 60px;
     }
     
-    @media screen and (min-width: 1200px) {                
+    @media screen and (min-width: 1200px) and (max-width: 1600px) {                
         height: auto;
         margin-bottom: 94px;
     }
@@ -49,7 +49,7 @@
         font-size: 26px;
     }
     
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) and (max-width: 1600px) {
         position: relative;
         left: 27%;
         width: 696px;
@@ -74,7 +74,7 @@
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-bottom: 118px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) and (max-width: 1600px) {
         position: relative;
         left: 25%;
         margin-bottom: 200px;
@@ -114,7 +114,7 @@
         text-align: center;
     }
 
-    @media screen and (min-width: 1200px) {                
+    @media screen and (min-width: 1200px) and (max-width: 1600px) {                
         width: 100%;
         text-align: center;
     }   

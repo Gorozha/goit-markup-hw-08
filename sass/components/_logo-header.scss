@@ -11,16 +11,17 @@
 /* header */
 .container-block {
     /*display: flex;*/
-    /*width: 1200px;*/
+    width: 1200px;
 }
 /* выровнял текст
 header*/
 .container-nav {
     @media screen and (min-width: 480px) and (max-width: 767px) {   
-        display: flex;
+        /*display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start ;
-        width: 100%;
+        justify-content: flex-start ;*/
+        width: 480px;
+        height: 453px;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px)  {
         width: 768px;
@@ -32,10 +33,10 @@ header*/
     @media screen and (min-width: 480px) and (max-width: 767px)  {
         margin: 0;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px)  {
-
+    @media screen and (min-width: 768px) and (max-width: 1199px)  {  
+    
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) and (max-width: 1600px) {
         position: relative;
         margin-left: 215px;
         margin-right: 85px;
@@ -51,6 +52,11 @@ header*/
 }
 /* header */
 .logo {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-right: 5px;
+    }
     display: flex;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -64,8 +70,10 @@ header*/
 }
 /* header */
 .log {
-    @media screen and (min-width: 480px) and (max-width: 767px)  {
-        margin: 0;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin: 0;                  
     }
     display: flex;
     padding-top: 25px;
@@ -85,13 +93,16 @@ header*/
     @media screen and (min-width: 480px) and (max-width: 767px)  {
         display: block;
         margin: 0;
+        position: absolute;
+        left: 43%;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px)  {
         display: flex;
         position: absolute;
         left: 30%;
+        top: 0;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) and (max-width: 1600px) {
         display: flex;
         position: relative;
         left: 0;
@@ -128,14 +139,17 @@ header*/
     @media screen and (min-width: 480px) and (max-width: 767px)   {
         display: block;
         margin: 0;
-        align-items: center;
+        /*align-items: center;*/
+        position: absolute;
+        top: 355px;
+        left: 36%;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px)   {                
         display: flex;
     }
 
-    @media screen and (min-width: 1200px) {                
+    @media screen and (min-width: 1200px) and (max-width: 1600px) {                
         margin-left: 305px;
     }        
 }
@@ -149,9 +163,9 @@ header*/
         margin-bottom: 5px;
         margin-top: 21px;
         padding: 0;
-        letter-spacing: 0.14em;
+        letter-spacing: 0.1em;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) and (max-width: 1600px) {
         /*display: flex;
         align-items: center;
         justify-content: space-between;*/
@@ -207,7 +221,7 @@ header*/
         margin-bottom: 21px;
         padding: 0;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) and (max-width: 1600px) {
         position: absolute;
         top: 28px;
         right: 4%;

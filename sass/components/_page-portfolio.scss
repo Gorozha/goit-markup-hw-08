@@ -37,7 +37,7 @@
             height: auto;
         }
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) and (max-width: 1600px) {
         width: 1200px;
         margin-bottom: 94px;
     }
@@ -64,7 +64,7 @@
         width: 354px;
         left: -8px;
     }
-    @media screen and (min-width: 1200px) { 
+    @media screen and (min-width: 1200px) and (max-width: 1600px) { 
          
         position: relative;
         width: 370px;
@@ -100,7 +100,7 @@
         overflow: hidden;
         opacity: 1;
     }
-    @media screen and (min-width: 1200px) {    
+    @media screen and (min-width: 1200px) and (max-width: 1600px) {    
         width: 370px;
         height: 294px;
         position: relative;
