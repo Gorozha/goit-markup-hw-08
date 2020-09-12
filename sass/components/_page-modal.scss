@@ -1,6 +1,6 @@
 /*стилизация модалки*/
 .modal {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (min-width: 480px)  {
         position: absolute;
         max-width: 450px;
         max-height: 609px; 
@@ -11,20 +11,20 @@
         height: 100%;
         background-color: $white-color;   
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px)  {
         position: absolute;
         top: 500px;
-        left: 50%;
+        left: 38%;
         transform: translate(-50%, -50%);
-        width: 450px;
+        width: 100%;
         height: 609px;
         background-color: $white-color;
     }
-    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    @media screen and (min-width: 1200px)  {
         position: absolute;
         margin: 0;
         top: 69%;
-        left: 50%;
+        left: 38%;
         transform: translate(-50%, -50%);
         width: 100%;
         height: 100%;
@@ -36,17 +36,28 @@
 }
 
 .form-field  {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-        width: 370px;
+    @media screen and (min-width: 480px)  {
+        width: 100%;
+        max-width: 370px;
+        margin-right: 40px;
+        margin-left: 40px;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        width: 370px;
+    @media screen and (min-width: 768px)  {
+        width: 100%;
+        max-width: 370px;
         top: 120px;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 100%;
+        max-width: 448px;
+        margin-right: 40px;
+        margin-left: 40px;
     }
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 448px;
     height: 40px;
     margin-bottom: 20px;
     border-radius: 4px;
@@ -99,28 +110,31 @@
 
 
 .comment {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (min-width: 480px) {
         position: absolute;
         width: 370px;
         height: 120px;
         right: 40px;
         top: 270px;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px)  {
         position: absolute;
         width: 370px;
         height: 120px;
         right: 40px;
         top: 285px;
     }
-    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         position: absolute;
-        width: 448px; 
+        width: 448px;
+        max-width: 448px; 
         height: 138px;     
         padding: 10px 20px;
-        top: 255px;
+        top: 275px;
         margin-bottom:20px;
-        right: 40px;
+        right: 0;
+        margin-right: 40px;
+        margin-left: 40px;
     }
         border-radius: 4px;
         border: 1px solid $main-color;
@@ -136,11 +150,14 @@ textarea:focus {
 }
 
 .check {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (min-width: 480px) {
         right: 8%;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px)  {
         right: 9%;
+    }
+    @media screen and (min-width: 1200px) {
+        right: 14%;
     }
     position: absolute;
     top: 437px;
@@ -186,13 +203,13 @@ textarea {
 }
 /*поле ввода комментария в модалке*/
 .form-label-comment {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (min-width: 480px) {
         display: none;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
         display: none;
     }
-    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         display: none;
     }
     position: absolute;
@@ -241,16 +258,24 @@ textarea {
 
 /*слой месседж*/
 .message {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (min-width: 480px) {
         width: 370px;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px)  {
         position: absolute;
         top: 0;
         left: 0;
         width: 370px;
         height: 60px;
         margin: 40px 40px 30px 40px;
+    }
+    @media screen and (min-width: 1200px)  {
+        position: absolute;
+        width: 100%;
+        max-width: 448px;
+        height: auto;
+        margin-right: 40px;
+        margin-left: 40px;
     }
     margin-top: 40px;
     margin-right: auto;
@@ -289,11 +314,11 @@ textarea {
 
 /* кнопка отправить в модалке */
 .submit {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (min-width: 480px)  {
         position: absolute;
         right: 129px;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
         right: 27%;
     }
     position: absolute;

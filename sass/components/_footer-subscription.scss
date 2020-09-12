@@ -9,31 +9,25 @@
 /*стилизация подписки*/
 
 .foot-btn {
-    @media screen and (min-width: 480px) and (max-width: 767px)  {
+    @media screen and (min-width: 480px) {
         margin: 20px 140px 60px 140px;
         top: 472px;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px)  {
+    @media screen and (min-width: 768px)  {
         margin: 0px 277px 66px 291px;
         top: 348px;
         width: 200px;
     }
-    @media screen and (min-width: 1200px) and (max-width: 1600px) { 
+    @media screen and (min-width: 1200px)  { 
         position: relative;
-        top: -59px;
-        left: 41%; 
-        margin-right:auto;
+        top: -154px;
+        left: 269px; 
+        /*margin-right:auto;*/
         margin-left: auto; 
     }      
     align-content: center ;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 108px;
-    margin-right: 215px;
-    margin-bottom: 94px;
-    height: 50px;
-    width: 200px;
+    position: absolute;      
+
     color: $white-color;
     background-color: $accent-color;
     transition: transform 250ms $timing-function;
@@ -45,34 +39,33 @@
     font-size: 16px;
     line-height: 30px;
     display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
 }
 /**/
 .form-label-foot {
-    @media screen and (min-width: 480px) and (max-width: 767px)  { 
-        position: absolute;       
+    @media screen and (min-width: 480px)  { 
+             
         top: 387px;
         left: 25%;
         width: 48%;
         margin: 0;
         color: $white-color;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px)  {
-        position: absolute;
+    @media screen and (min-width: 768px) {
+       
         top: 250px;
         left: 35%;
-        width: 30%;
-       
+        width: 30%;       
         margin-bottom: 20px;
         color: $white-color;
     }
-    @media screen and (min-width: 1200px) and (max-width: 1600px) {      
-        margin-bottom: 20px;
-        position: absolute;
-        margin-top: 72px;
-        left: 52%;
+    @media screen and (min-width: 1200px)  { 
+        max-width: 230px;
+        width: 100%;     
+        margin-bottom: 10px;       
+        left: 53%;
+        top: 80px;
     }
     position: absolute;
     font-family: Roboto;
@@ -82,12 +75,13 @@
     line-height: 16px;
     letter-spacing: 0.01em;
     text-transform: uppercase;
-    color: $white-color;
-    
+    color: $white-color;    
 }
+
+
 /*кнопка отправки в подписке*/
 .form-input-foot {
-    @media screen and (min-width: 480px) and (max-width: 767px)  {
+    @media screen and (min-width: 480px) {
         position: absolute;
         margin: 423px 15px 130px 15px;
         top: 0;
@@ -95,18 +89,19 @@
         width: 94%;
         height: 50px;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px)  {
+    @media screen and (min-width: 768px) {
         position: absolute;
         margin: 0px 152px 130px 166px;
         width: 450px;
         top: 285px;
         height: 50px;
     }
-    @media screen and (min-width: 1200px) and (max-width: 1600px) {
-        top: 99px;
+    @media screen and (min-width: 1200px)  {
+        top: 28px;
         position: relative;
-        right: -52%;
-        width: 350px;
+        right: -39%;
+        max-width: 350px;
+        width: 100%;
         height: 50px;
         padding: 16px;
        /* margin-top: 108px;*/
