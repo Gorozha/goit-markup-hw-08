@@ -12,7 +12,8 @@
         margin-bottom: 60px;
     }
     
-    @media screen and (min-width: 1200px)  {                
+    @media screen and (min-width: 1200px)  { 
+        max-width: 1600px;               
         height: auto;
         margin-bottom: 94px;
     }
@@ -52,7 +53,8 @@
     @media screen and (min-width: 1200px) {
         position: relative;
         left: 0;
-        width: 696px;
+        width: 100%;
+        max-width: 696px;
         margin-top: 200px;
         margin-bottom: 30px;
         margin-right: auto;

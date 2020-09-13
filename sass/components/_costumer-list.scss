@@ -44,49 +44,56 @@
 }
  
 .costumer-list {
-    @media screen and (min-width: 480px) and (max-width: 767px) {        
+    fill: currentColor;
+    @media screen and (min-width: 480px)  {        
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        fill: currentColor;
-        
+        width: 100%;
+        max-width: 450px;             
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {        
+    @media screen and (min-width: 768px) {        
         display: flex;
         flex-wrap: wrap;
-        justify-content: center; 
+        justify-content: center;
+        max-width: 738px; 
         width: 100%;
-        height: auto;                 
-        fill: currentColor;
+        height: auto;                        
         margin-bottom: 30px;
+        margin-right: auto;
+        margin-left: auto;
     }
-    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         display: flex;
         flex-wrap: wrap;
         justify-content: center; 
+        max-width: 1200px;
         width: 100%;
-        height: auto;                 
-        fill: currentColor;
+        height: auto;                         
         margin-bottom: 94px;
+        margin-left: auto;
+        margin-right: auto;
     }
+    
 }
 
 
 .all-costumer {        
-    @media screen and (min-width: 480px) and (max-width: 767px) {        
+    @media screen and (min-width: 480px) {        
         margin: 15px;
         padding: 0;
         
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
         &:nth-child(1n) {
-            margin-right: 15px;
-            margin-top: 15px;
-            width: 226px;
+            /*margin-right: 15px;
+            margin-top: 15px;*/
+            width: 100%;
+            max-width: 226px;
             height: 90px;
         }  
     }
-    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    @media screen and (min-width: 1200px)  {
 
     }     
     display:flex;

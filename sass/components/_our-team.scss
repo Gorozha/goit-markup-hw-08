@@ -10,14 +10,18 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (min-width: 480px)  {
         margin-bottom: 60px;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
         margin-bottom: 60px; 
     }
-    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    @media screen and (min-width: 1200px)  {
+        max-width: 1200px;
+        width: 100%;
         margin-bottom: 94px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 /*наша команда*/
@@ -35,19 +39,19 @@
     letter-spacing: 0.03em;
     color: $dark-color;
 
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (min-width: 480px)  {
         font-size: 28px;
         padding-top: 60px;
         padding-bottom: 30px;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px)  {
         font-size: 28px;
         padding-top: 60px;
         padding-bottom: 30px;                        
     }
     
-    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    @media screen and (min-width: 1200px)  {
         font-size: 36px;
         padding-top: 94px;
         padding-bottom: 50px;                        
@@ -56,20 +60,22 @@
 /*наша команда*/
 .all-team {
     /*width: 270px;*/
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (min-width: 480px)  {
         width: 450px;
         text-align: center;
         margin-bottom: 30px;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) { 
+    @media screen and (min-width: 768px) { 
         width: calc(100% / 2 - 60px);               
         margin: 15px;       
     }
     
-    @media screen and (min-width: 1200px) and (max-width: 1600px) { 
-        width: 270px;               
-        margin-right: 30px;
+    @media screen and (min-width: 1200px)  { 
+        width: 100%;
+        max-width: 270px;               
+        margin-right: auto;
+        margin-left: auto;
         margin-bottom: 60px;
     }    
     box-shadow: 0px 1px 3px $light-shadow-1,
@@ -78,9 +84,9 @@
     border-radius: 0px 0px 4px 4px;
 }
 /*наша команда*/
-.all-team:nth-child(4n) {
-    margin-right: 0;
-}
+/*.all-team:nth-child(4n) {
+    margin-right: 0; отмена для 1200 
+}*/
 /*наша команда*/
 .team-photo {
     width: 100%;
