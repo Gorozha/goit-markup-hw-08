@@ -890,6 +890,7 @@ p {
 @media screen and (min-width: 768px) {
   .dark-background {
     position: relative;
+    max-width: 768px;
     width: 100%;
     height: 463px;
     margin: auto;
@@ -898,6 +899,7 @@ p {
 
 @media screen and (min-width: 1200px) {
   .dark-background {
+    max-width: 1600px;
     width: 100%;
     height: 252px;
     margin: auto;
@@ -1076,7 +1078,6 @@ p {
 
 .footer-social {
   position: absolute;
-  margin-bottom: 100px;
 }
 
 @media screen and (min-width: 480px) {
@@ -1091,25 +1092,20 @@ p {
 
 @media screen and (min-width: 768px) {
   .footer-social {
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 65px;
-    margin-bottom: 0;
-    top: 0;
-    right: 0;
+    top: 50%;
+    right: 50%;
+    margin: auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-social {
-    position: relative;
     margin-top: 72px;
     max-width: 270px;
     width: 100%;
-    top: 80px;
-    right: 0;
-    margin: 0;
+    top: 33%;
+    right: 30%;
+    margin: auto;
   }
 }
 
@@ -1148,6 +1144,7 @@ p {
 
 @media screen and (min-width: 1200px) {
   .follow {
+    position: absolute;
     left: -50%;
   }
 }
@@ -1416,7 +1413,7 @@ p {
 @media screen and (min-width: 768px) {
   .modal {
     position: absolute;
-    top: 500px;
+    top: 50%;
     left: 38%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -1430,8 +1427,8 @@ p {
   .modal {
     position: absolute;
     margin: 0;
-    top: 69%;
-    left: 38%;
+    top: 50%;
+    left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     width: 100%;
@@ -1890,19 +1887,19 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .foot-btn {
-    margin: 0px 277px 66px 291px;
-    top: 348px;
-    width: 200px;
+    top: 75%;
+    left: 37%;
+    max-width: 200px;
+    width: 100%;
+    margin: auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .foot-btn {
-    position: relative;
-    top: -154px;
-    left: 269px;
-    /*margin-right:auto;*/
-    margin-left: auto;
+    top: 43%;
+    left: 83%;
+    margin: auto;
   }
 }
 
@@ -1925,17 +1922,15 @@ textarea {
     left: 25%;
     width: 48%;
     margin: 0;
-    color: #ffffff;
   }
 }
 
 @media screen and (min-width: 768px) {
   .form-label-foot {
-    top: 250px;
+    top: 53%;
     left: 35%;
     width: 30%;
-    margin-bottom: 20px;
-    color: #ffffff;
+    margin: auto;
   }
 }
 
@@ -1945,12 +1940,13 @@ textarea {
     width: 100%;
     margin-bottom: 10px;
     left: 53%;
-    top: 80px;
+    top: 32%;
   }
 }
 
 /*кнопка отправки в подписке*/
 .form-input-foot {
+  position: absolute;
   border-radius: 4px;
   border: 1px solid #757575;
   background: #2F303A;
@@ -1958,7 +1954,6 @@ textarea {
 
 @media screen and (min-width: 480px) {
   .form-input-foot {
-    position: absolute;
     margin: 423px 15px 130px 15px;
     top: 0;
     right: -1%;
@@ -1969,26 +1964,25 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .form-input-foot {
-    position: absolute;
-    margin: 0px 152px 130px 166px;
-    width: 450px;
-    top: 285px;
+    margin-bottom: 20px;
+    margin: auto;
+    max-width: 450px;
+    width: 100%;
+    top: 60%;
+    left: 0%;
     height: 50px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .form-input-foot {
-    top: 28px;
-    position: relative;
-    right: -39%;
+    top: 44%;
+    right: -35%;
     max-width: 350px;
     width: 100%;
     height: 50px;
     padding: 16px;
-    /* margin-top: 108px;*/
-    margin-right: 12px;
-    /*-bottom: 94px;*/
+    margin: auto;
   }
 }
 

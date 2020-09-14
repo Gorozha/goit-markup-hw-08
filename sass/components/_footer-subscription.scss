@@ -13,17 +13,17 @@
         margin: 20px 140px 60px 140px;
         top: 472px;
     }
-    @media screen and (min-width: 768px)  {
-        margin: 0px 277px 66px 291px;
-        top: 348px;
-        width: 200px;
+    @media screen and (min-width: 768px)  {        
+        top: 75%;
+        left: 37%;
+        max-width: 200px;
+        width: 100%;
+        margin: auto;
     }
     @media screen and (min-width: 1200px)  { 
-        position: relative;
-        top: -154px;
-        left: 269px; 
-        /*margin-right:auto;*/
-        margin-left: auto; 
+        top: 43%;
+        left: 83%; 
+        margin: auto; 
     }      
     align-content: center ;
     position: absolute;      
@@ -50,22 +50,21 @@
         left: 25%;
         width: 48%;
         margin: 0;
-        color: $white-color;
+        
     }
     @media screen and (min-width: 768px) {
        
-        top: 250px;
+        top: 53%;
         left: 35%;
         width: 30%;       
-        margin-bottom: 20px;
-        color: $white-color;
+        margin: auto;
     }
     @media screen and (min-width: 1200px)  { 
         max-width: 230px;
         width: 100%;     
         margin-bottom: 10px;       
         left: 53%;
-        top: 80px;
+        top: 32%;
     }
     position: absolute;
     font-family: Roboto;
@@ -82,7 +81,6 @@
 /*кнопка отправки в подписке*/
 .form-input-foot {
     @media screen and (min-width: 480px) {
-        position: absolute;
         margin: 423px 15px 130px 15px;
         top: 0;
         right: -1%;
@@ -90,24 +88,24 @@
         height: 50px;
     }
     @media screen and (min-width: 768px) {
-        position: absolute;
-        margin: 0px 152px 130px 166px;
-        width: 450px;
-        top: 285px;
+        margin-bottom: 20px;
+        margin: auto;
+        max-width: 450px;
+        width: 100%;
+        top: 60%;
+        left: 0%;
         height: 50px;
     }
     @media screen and (min-width: 1200px)  {
-        top: 28px;
-        position: relative;
-        right: -39%;
+        top: 44%;
+        right: -35%;
         max-width: 350px;
         width: 100%;
         height: 50px;
         padding: 16px;
-       /* margin-top: 108px;*/
-        margin-right: 12px;
-        /*-bottom: 94px;*/
-    } 
+        margin: auto;
+    }
+    position: absolute; 
     border-radius: 4px;
     border:1px solid $main-color;
     background: $dark-background;  
