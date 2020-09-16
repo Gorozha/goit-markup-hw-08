@@ -477,6 +477,7 @@ p {
 }
 
 .nav-links {
+  position: absolute;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -493,7 +494,7 @@ p {
   .nav-links {
     display: block;
     margin: 0;
-    position: absolute;
+    /*position: absolute;*/
     left: 43%;
   }
 }
@@ -503,7 +504,7 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: absolute;
+    /*position: absolute;*/
     max-width: 294px;
     width: 100%;
     left: 30%;
@@ -516,11 +517,13 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: relative;
-    left: 36%;
-    top: -61px;
+    /*position: absolute;*/
+    left: 21%;
+    top: 0;
     max-width: 294px;
     width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -566,12 +569,9 @@ p {
   display: -ms-flexbox;
   display: flex;
   width: 153px;
-  padding-left: 0px;
   margin-right: 85px;
   text-decoration: none;
   font-weight: 700;
-  -ms-flex-item-align: center;
-      align-self: center;
 }
 
 @media screen and (min-width: 480px) {
@@ -580,13 +580,20 @@ p {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .logotype {
+    position: absolute;
+    left: 0;
+    top: 1%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .logotype {
-    position: relative;
-    /*margin-left: 215px;
-        margin-right: 85px;*/
+    position: absolute;
     left: 0;
-    top: 0;
+    top: 1%;
+    margin-right: 93px;
   }
 }
 
@@ -669,11 +676,11 @@ p {
 
 @media screen and (min-width: 768px) {
   .adr {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     position: absolute;
-    left: 0;
+    left: 0%;
+    top: 54%;
+    margin: auto;
   }
 }
 
@@ -707,12 +714,9 @@ p {
 @media screen and (min-width: 768px) {
   .pin {
     position: absolute;
-    top: -355px;
+    top: -351px;
     right: -767px;
-    margin-left: auto;
-    margin-right: 15px;
-    margin-bottom: 5px;
-    margin-top: 21px;
+    margin: auto;
     padding: 0;
     letter-spacing: 0.1em;
   }
@@ -724,7 +728,7 @@ p {
         align-items: center;
         justify-content: space-between;*/
     position: absolute;
-    top: -20px;
+    top: 0;
     right: 0;
     padding-top: 32px;
     padding-right: 0;
@@ -767,12 +771,9 @@ p {
 @media screen and (min-width: 768px) {
   .key {
     position: absolute;
-    top: -316px;
-    right: -765px;
-    margin-left: auto;
-    margin-right: 30px;
-    margin-top: 5px;
-    margin-bottom: 21px;
+    top: -318px;
+    right: -757px;
+    margin: auto;
     padding: 0;
   }
 }
@@ -2215,7 +2216,9 @@ textarea {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    padding-top: 4%;
+    padding-bottom: 1%;
   }
 }
 
